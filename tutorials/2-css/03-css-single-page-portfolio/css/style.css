@@ -1,3 +1,21 @@
 body {
     background: rgb(162, 154, 230); 
 }
+
+.portfolio-section {
+    display: grid;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 500px;
+}
