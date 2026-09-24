@@ -1,3 +1,17 @@
+/*color palette*/
+
+:root { 
+ --bg-color-name-1:#88628f;
+--bg-color-name-2: #402a44;
+--bg-color-body: #320636;
+--font: 'Times New Roman', Times, serif;
+--font-color: rgb(227, 185, 231);
+--font-color-accent: #300636;
+--accent-1: #d063da;
+--photo-background-color: #16021f;
+}
+
+
 /*CSS resets */
 * {
     margin: 0;
@@ -10,6 +24,11 @@ html {
 }
 
 /* general css */
+
+
+html {
+    scroll-behavior: smooth;
+}
 
 
 .portfolio-section {
@@ -31,20 +50,33 @@ html {
 }
 
 body {
-    background-color: #320636;
-    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--bg-color-body);
+    font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif; 
     font-size: 1.5rem;
     line-height: 1.5;
-    color: rgb(227, 185, 231);
+    color: var(--font-color);
+}
+
+@media (max-width: 700px) {
+    body {
+    font-size: 1.0rem;
+    }
 }
 
 header {
     padding: 4rem;
     margin-bottom: 1rem;
-    background: linear-gradient(to right, #88628f, #402a44);
-    color: rgb(227, 185, 231);
-    border-bottom: #d063da 1px solid;
+    background: linear-gradient(to right, var(--bg-color-name-1), var(--bg-color-name-2));
+    color: var(--font-color);
+    border-bottom: var(--accent-1) 1px solid;
     text-align: center;
+}
+
+@media (max-width: 700px) {
+    header {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 }
 
 header h1 {
@@ -59,9 +91,31 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: rgb(227, 185, 231);
+    color: var(--font-color);
     display: inline-block;
     margin: 0 1rem;
+    transition: color .5s ease;
+}
+
+nav a:hover {
+    color: var(--font-color-accent);
+    
+}
+
+main{
+    margin: 0;
+}
+
+@media (max-width: 850px) {
+    main {
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        margin: 1rem;
+    }
 }
 
 .about-section,
@@ -93,12 +147,18 @@ nav a {
 
 .portfolio-item {
     margin-bottom: 5rem;
-    background-color: #300636;
+    background-color: var(--bg-color-body);
     padding: 4rem;
     text-align: center;
-    border: 2px #d063da solid;
+    border: 2px var(--accent-1) solid;
     border-radius: .5rem;
-    box-shadow: 0px 4px 6px rgb(68, 52, 70)
+    box-shadow: 0px 4px 6px var(--font-color);
+}
+
+@media (max-width: 600px) {
+    .portfolio-item {
+        padding: 2rem;
+    }
 }
 
 .portfolio-item img {
@@ -108,11 +168,14 @@ nav a {
     margin: 0 auto;
     display: block;
     border-radius: .5rem;
-    border: 3px double #d063da;
+    border: 3px double var(--accent-1);
 }
 
 .portfolio-item h3 {
     margin: 1rem 0;
+    background-color: var(--photo-background-color);
+    display: inline-block;
+    border-radius: 3rem;
 }
 
 .portfolio-item p {
@@ -120,16 +183,16 @@ nav a {
 }
 
 .about-section {
-    background-color: #562158;
+    background-color: var(--bg-color-name-1);
 }
 
 .portfolio-section {
-    background-color: #715475;
+    background-color: var(--bg-color-name-2);
 }
 
 footer {
-    background-color: #16021f;
-    color: #7d5f81;
+    background-color: var(--photo-background-color);
+    color: var(--font-color);
     padding: 1rem;
     text-align: end;
 }
