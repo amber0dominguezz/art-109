@@ -1,0 +1,43 @@
+
+
+
+.title {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.square {
+    background-color: aquamarine;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 50px auto;
+    transition: all 1s;
+}
+
+.square:hover {
+    background-color:rgb(62, 104, 110);
+    transform: rotate(30deg);
+}
+
+.button-div {
+    text-align: center;
+}
+
+.button {
+    color: white;
+    background-color: rgb(68, 106, 148);
+    padding: 15px 30px;
+    margin: 50px auto;
+    display: block;
+    width: 100px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .5s;
+}
+
+.button:hover {
+    background-color:rgb(98, 43, 226);
+    color: rgb(221, 175, 175);
+    transform: scale(1.5);
+}
