@@ -1,0 +1,202 @@
+/*color palette*/
+
+:root { 
+ --bg-color-name-1:#88628f;
+--bg-color-name-2: #402a44;
+--bg-color-body: #320636;
+--font: 'Times New Roman', Times, serif;
+--font-color: rgb(227, 185, 231);
+--font-color-accent: #300636;
+--accent-1: #d063da;
+--photo-background-color: #16021f;
+}
+
+
+/*CSS resets */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* respect uesr font size preferences */
+html {
+    font-size: 100%;
+}
+
+/* general css */
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.portfolio-section {
+    display: grid;
+    gap: rem;
+    padding: 2rem;
+}
+
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 500px;
+}
+
+body {
+    background-color: var(--bg-color-body);
+    font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif; 
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: var(--font-color);
+}
+
+@media (max-width: 700px) {
+    body {
+    font-size: 1.0rem;
+    }
+}
+
+header {
+    padding: 4rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, var(--bg-color-name-1), var(--bg-color-name-2));
+    color: var(--font-color);
+    border-bottom: var(--accent-1) 1px solid;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    header {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+nav {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--font-color);
+    display: inline-block;
+    margin: 0 1rem;
+    transition: color .5s ease;
+}
+
+nav a:hover {
+    color: var(--font-color-accent);
+    
+}
+
+main{
+    margin: 0;
+}
+
+@media (max-width: 850px) {
+    main {
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        margin: 1rem;
+    }
+}
+
+.about-section,
+.portfolio-section,
+.contact-section {
+    margin-bottom: 1rem;
+}
+
+.about-content,
+.portfolio-content,
+.contact-content {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.contact-content {
+    text-align: left;
+    margin: 0;
+    margin-left: 2rem;
+}
+
+.about-content h2,
+.portfolio-content h2,
+.contact-content h2 {
+    padding: 2rem 0;
+}
+
+.portfolio-item {
+    margin-bottom: 5rem;
+    background-color: var(--bg-color-body);
+    padding: 4rem;
+    text-align: center;
+    border: 2px var(--accent-1) solid;
+    border-radius: .5rem;
+    box-shadow: 0px 4px 6px var(--font-color);
+}
+
+@media (max-width: 600px) {
+    .portfolio-item {
+        padding: 2rem;
+    }
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    width: 60vw;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: .5rem;
+    border: 3px double var(--accent-1);
+}
+
+.portfolio-item h3 {
+    margin: 1rem 0;
+    background-color: var(--photo-background-color);
+    display: inline-block;
+    border-radius: 3rem;
+}
+
+.portfolio-item p {
+    font-size: 1.2rem;
+}
+
+.about-section {
+    background-color: var(--bg-color-name-1);
+}
+
+.portfolio-section {
+    background-color: var(--bg-color-name-2);
+}
+
+footer {
+    background-color: var(--photo-background-color);
+    color: var(--font-color);
+    padding: 1rem;
+    text-align: end;
+}
+
+footer p {
+    font-size: 1.2rem;
+}
