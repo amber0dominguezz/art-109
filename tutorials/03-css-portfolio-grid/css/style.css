@@ -1,0 +1,70 @@
+/*color palette*/
+
+:root { 
+--bg-color-name-1:#88628f;
+--bg-color-name-2:#402a44;
+--bg-color-body: rgb(227, 185, 231);
+--font: 'Times New Roman', Times, serif;
+--font-color: rgb(50, 6, 54);
+--font-color-accent: #300636;
+--accent-1: #d063da;
+--photo-background-color: #16021f;
+}
+
+
+/*CSS resets */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* respect user font size preferences */
+html {
+    font-size: 100%;
+}
+
+/* make images responsive */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.portfolio-item img {
+    width: 100%;
+    max-width: 24rem;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* general css */
+
+body {
+    background-color: var(--bg-color-body);
+    color: var(--font-color);
+    font-size: 1.5rem;
+    font-family: var(--font);
+    line-height: 1.5;
+}
+
+header {
+    padding: 5rem 2rem;
+}
+
+.about-content, .portfolio-content, .contact-content {
+    max-width: 70rem;
+    margin: 5rem auto;
+}
+
+.portfolio-item {
+    max-width: 70rem;
+    margin: 5rem auto;
+}
+
+.about-content h2, .portfolio-content h2, .contact-content h2 {
+    margin: 2rem 0;
+}
+
+
+footer {
+    padding: 1rem 2rem;
+}
