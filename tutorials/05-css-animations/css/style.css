@@ -4,21 +4,21 @@ body {
 }
 
 @keyframes change-color {
-    0% {background-color:rgb(255, 255, 255)}
-    50% {background-color:rgb(114, 178, 111)}
-    100% {background-color:rgb(205, 166, 228)}
+    0% {background-color:rgb(161, 155, 183)}
+    50% {background-color:rgb(80, 34, 118)}
+    100% {background-color:rgb(100, 45, 87)}
 }
 
 .title {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     margin: 80px auto;
-    animation: skew 3s infinite alternate;
+    animation: skew1 3s infinite alternate;
 }
 
-@keyframes skew {
-    0% {transform: skew(0deg 0deg);}
-    100% {transform: skew(30deg 20deg);}
+@keyframes skew1 {
+    0% {transform: skew(0deg, 0deg);}
+    100% {transform: skew(30deg, 20deg);}
 }
 
 .square {
@@ -26,7 +26,7 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 20px;
-    margin: 50px auto;
+    margin: 50px 0;
     transition: all 1s;
 }
 
@@ -56,4 +56,64 @@ body {
     background-color:rgb(98, 43, 226);
     color: rgb(221, 175, 175);
     transform: scale(1.5);
+}
+
+.circle {
+    background-color: rgb(206, 176, 67);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 50px 0;
+    animation: skew2 3s infinite alternate;
+    transition: all 1s;
+}
+
+.circle:hover {
+    background-color: rgb(171, 87, 22);
+}
+
+@keyframes skew2 {
+    0% {transform: skew(0deg, 0deg);}
+    100% {transform: skew(-30deg, -20deg);}
+}
+
+.shapes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.loading {
+    background-color: rgb(156, 165, 173);
+    animation: stretch 3s infinite alternate;
+    width: 80vw;
+}
+
+@keyframes stretch {
+    0% {width: 100px;}
+    100% {width: 80vw;}
+}
+
+.big-div {
+    text-align: center;
+}
+
+.bigbutt {
+    color: rgb(24, 6, 6);
+    background-color: rgb(68, 106, 148);
+    padding: 15px 30px;
+    margin: 50px auto;
+    display: block;
+    width: 200px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .5s;
+}
+
+.bigbutt:hover {
+    background-color:rgb(152, 143, 174);
+    color: rgb(64, 20, 103);
+    transform: scale(3.0);
 }
