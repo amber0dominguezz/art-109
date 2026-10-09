@@ -12,7 +12,16 @@
 }
 
 
-/*CSS resets */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~CSS resets~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Change box-sizing default to border-box */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -75,7 +84,23 @@ nav a:hover {
 
 .portfolio-item {
     max-width: 70rem;
-    margin: 5rem auto;
+    margin: 0rem auto;
+    padding: 1rem;
+    background-color: var(--photo-background-color);
+    color: var(--font-color-accent);
+    border-radius: 1rem;
+}
+
+.portfolio-item p {
+    font-size: 1rem;
+}
+
+.portfolio-item h3 {
+    font-size: 1.25rem;
+}
+
+.portfolio-item img {
+    border-radius: .85rem;
 }
 
 .about-content h2,
@@ -95,10 +120,23 @@ footer img {
     margin: 0 .5rem;
 }
 
-/* flex styling */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~Flex styling~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .flex-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.flex-container-grid {
+    margin: 0 10rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.flex-item-grid {
+    flex: 1 0 19rem;
 }
