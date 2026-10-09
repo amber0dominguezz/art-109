@@ -1,14 +1,14 @@
 /*color palette*/
 
-:root { 
---bg-color-name-1:#88628f;
---bg-color-name-2:#402a44;
---bg-color-body: rgb(227, 185, 231);
---font: 'Times New Roman', Times, serif;
---font-color: rgb(50, 6, 54);
---font-color-accent: #300636;
---accent-1: #d063da;
---photo-background-color: #16021f;
+:root {
+    --bg-color-name-1: #88628f;
+    --bg-color-name-2: #402a44;
+    --bg-color-body: rgb(227, 185, 231);
+    --font: 'Times New Roman', Times, serif;
+    --font-color: rgb(50, 6, 54);
+    --font-color-accent: rgb(169, 34, 186);
+    --accent-1: #d063da;
+    --photo-background-color: #16021f;
 }
 
 
@@ -50,7 +50,25 @@ header {
     padding: 5rem 2rem;
 }
 
-.about-content, .portfolio-content, .contact-content {
+header h1 {
+    text-shadow: #88628f 0px 0px 5px, #88628f 0px 0px 10px, #88628f 0px 0px 15px,
+     #402a44 0px 0px 20px, #402a44 0px 0px 30px, #402a44 0px 0px 40px, #402a44 0px 0px 50px, #402a44 0px 0px 75px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--font-color);
+    margin: 0 .5rem;
+    transition: all 0.5s ease;
+}
+
+nav a:hover {
+    color: var(--font-color-accent);
+}
+
+.about-content,
+.portfolio-content,
+.contact-content {
     max-width: 70rem;
     margin: 5rem auto;
 }
@@ -60,7 +78,9 @@ header {
     margin: 5rem auto;
 }
 
-.about-content h2, .portfolio-content h2, .contact-content h2 {
+.about-content h2,
+.portfolio-content h2,
+.contact-content h2 {
     margin: 2rem 0;
 }
 
@@ -69,8 +89,16 @@ footer {
     padding: 1rem 2rem;
 }
 
-~~~~~~~~~~~~~~~~~flex styling~~~~~~~~~~~~~~~~~
+footer img {
+    display: inline;
+    max-width: 3rem;
+    margin: 0 .5rem;
+}
+
+/* flex styling */
 
 .flex-container {
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
