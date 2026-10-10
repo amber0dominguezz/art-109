@@ -57,4 +57,29 @@ main {
     margin: 0 auto;
 }
 
+img {
+    width: 15rem;
+}
 
+.hidden {
+    display: none;
+
+}
+
+#img1 {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+}
+
+#img2 {
+    position: absolute;
+    top: 30rem;
+    left: 13rem;
+}
+
+#img3 {
+    position: absolute;
+    bottom: 5rem;
+    right: 6rem;
+}

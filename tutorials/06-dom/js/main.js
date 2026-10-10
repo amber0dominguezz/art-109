@@ -1,9 +1,13 @@
 // console.log ("meow");
 
+
 // select html elements
 let header = document.querySelector("#header");
 let changeHeaderButton = document.querySelector("#change-header-button");
 let changeThemeButton = document.querySelector("#change-theme-button");
+let img1 = document.querySelector("#img1");
+let img2 = document.querySelector("#img2");
+let img3 = document.querySelector("#img3");
 
 
 // change header with button click
@@ -29,3 +33,13 @@ changeThemeButton.addEventListener("click", () => {
     document.body.classList.toggle("dark");
     changeButtonText();
 })
+
+// toggle image visibility
+img1.addEventListener("click", (event) => {
+    img2.classList.remove("hidden");
+});
+
+img2.addEventListener("click", (event) => {
+    img3.classList.remove("hidden");
+});
+  
