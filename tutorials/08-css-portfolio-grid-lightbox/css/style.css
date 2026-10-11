@@ -7,7 +7,7 @@
     --font: 'Times New Roman', Times, serif;
     --font-color: rgb(50, 6, 54);
     --font-color-accent: rgb(169, 34, 186);
-    --accent-1: #e6cfec;
+    --accent-1: #d063da;
     --photo-background-color: #16021f;
 }
 
@@ -78,7 +78,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--accent-1);
+    color: var(--font-color-accent);
 }
 
 .navbar {
@@ -159,24 +159,9 @@ main {
 
 .about-content,
 .portfolio-content,
-.contact-content,
-.project-content {
+.contact-content {
     max-width: 70rem;
     margin: 0 auto 7rem auto;
-}
-
-/* project content is for project pages */
-.project-content {
-    text-align: center;
-}
-
-.project-content img {
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-.project-content p {
-    padding: 1rem;
 }
 
 .portfolio-item {
@@ -186,11 +171,6 @@ main {
     background-color: var(--photo-background-color);
     color: var(--font-color-accent);
     border-radius: 1rem;
-}
-
-.portfolio-item a {
-    text-decoration: none;
-    color: var(--font-color-accent);
 }
 
 .portfolio-item p {
@@ -207,8 +187,6 @@ main {
 
 .about-content h2,
 .portfolio-content h2,
-.contact-content h2,
-.project-content h2,
 .contact-content h2 {
     margin: 2rem 0;
 }
