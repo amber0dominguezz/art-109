@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Amber Dominguez Penaloza Portfolio</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/baguetteBox.css" />
 </head>
 
 <body>
@@ -40,7 +41,7 @@
       <h2>𓊈𒆜My Work𒆜𓊉</h2>
       <div class="flex-container-grid">
         <div class="portfolio-item flex-item-grid">
-          <img src="images/selfie.jpg" alt="Photography Portrait" />
+          <a href="images/selfie.jpg" data-caption="Photography"><img src="images/selfie.jpg" alt="Photography Portrait" /></a>
           <h3>Photography Portrait, 2025</h3>
           <p>
             This photograph was a part of a project based on the theme of
@@ -48,7 +49,7 @@
           </p>
         </div>
         <div class="portfolio-item flex-item-grid">
-          <img src="images/bigcunt.jpg" alt="Biggest Cunt Award" />
+          <a href="images/bigcunt.jpg" data-caption="Medal of Dishonor"><img src="images/bigcunt.jpg" alt="Biggest Cunt Award" /></a>
           <h3>Biggest Cunt Award, 2024</h3>
           <p>
             The idea behind the medal was to make a "medal of dishonor". So, I
@@ -56,7 +57,7 @@
           </p>
         </div>
         <div class="portfolio-item flex-item-grid">
-          <img src="images/glitch.jpg" alt="Glitch Art" />
+          <a href="images/glitch.jpg" data-caption="Glitch Art"><img src="images/glitch.jpg" alt="Glitch Art" /></a>
           <h3>Glitch Art, 2024</h3>
           <p>
             I wanted to make glitch art that felt like a digital distortion of
@@ -122,6 +123,12 @@
     </div>
   </footer>
   <script src="js/hamburger.js"></script>
+  <script src="js/baguetteBox.js"></script>
+  <script>
+    baguetteBox.run(".flex-container-grid", {
+      caption: true
+    })
+  </script>
 </body>
 
 </html>
