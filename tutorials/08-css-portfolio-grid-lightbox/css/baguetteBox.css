@@ -49,11 +49,13 @@
   display: block;
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
   line-height: 1.8;
   white-space: normal;
-  color: #ccc;
+  color: #c18ad6;
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.6);
   font-family: sans-serif;
