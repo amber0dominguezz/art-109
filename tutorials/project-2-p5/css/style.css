@@ -52,12 +52,27 @@ html {
 }
 
 body {
-    background-color: var(--bg-color-body);
+    background-color: transparent;
     color: var(--font-color);
     font-size: 1.5rem;
     font-family: var(--font);
     line-height: 1.5;
+    isolation: isolate;
     /* text-align: justify; */
+}
+
+canvas.site-background-canvas {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+header,
+main,
+footer {
+    position: relative;
+    z-index: 1;
 }
 
 header {
@@ -66,19 +81,19 @@ header {
 }
 
 header h1 {
-    text-shadow: #88628f 0px 0px 5px, #88628f 0px 0px 10px, #88628f 0px 0px 15px,
-     #402a44 0px 0px 20px, #402a44 0px 0px 30px, #402a44 0px 0px 40px, #402a44 0px 0px 50px, #402a44 0px 0px 75px;
+    color: #f8e9ff;
+    text-shadow: 0 0 8px #88628f, 0 0 18px #402a44;
 }
 
 nav a {
     text-decoration: none;
-    color: var(--font-color);
+    color: #f8e9ff;
     /* margin: 0 .5rem; */
     transition: all 0.5s ease;
 }
 
 nav a:hover {
-    color: var(--accent-1);
+    color: #e4a6f1;
 }
 
 .navbar {
