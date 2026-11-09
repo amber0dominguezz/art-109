@@ -1,6 +1,7 @@
 const toast = document.querySelector(".toast");
 let toastTimer;
 
+// Reuse one toast and restart its timer whenever a new message is shown.
 function showToast(message) {
   toast.textContent = message;
   toast.classList.add("is-visible");
@@ -8,6 +9,7 @@ function showToast(message) {
   toastTimer = setTimeout(() => toast.classList.remove("is-visible"), 2200);
 }
 
+// Delegation keeps interactions working for posts added after the page loads.
 document.addEventListener("click", async (event) => {
   const target = event.target;
   if (!(target instanceof Element)) return;
@@ -76,6 +78,7 @@ document.addEventListener("click", async (event) => {
       comment.className = "posted-comment";
       const author = document.createElement("strong");
       author.textContent = "Alex Morgan";
+      // Insert user input as text so markup in a comment is never interpreted.
       comment.append(author, document.createTextNode(` ${value}`));
       form.before(comment);
       const commentCount = post.querySelector(".reaction-comments");
@@ -183,6 +186,7 @@ document.querySelector("#publish-post").addEventListener("click", () => {
     }
     actions.append(button);
   });
+  // Build the post with DOM nodes and textContent to keep user text inert.
   post.append(header, copy, reactions, actions);
   document.querySelector(".posts").prepend(post);
   field.value = "";
