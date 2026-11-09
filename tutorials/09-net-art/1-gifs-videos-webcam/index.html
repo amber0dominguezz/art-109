@@ -24,10 +24,32 @@
                 meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow
             </p>
             <img src="media/cat2.gif" alt="other cat gif" class="other-dancing-cat">
-
         </div>
+
+        <!-- <div class="my-vid"> -->
+            <!-- autoplay video -->
+            <video width="360" height="215" autoplay muted loop>
+                <source src="media/tinyvid.mp4" type="video/mp4">
+            </video>
+            <!-- hover video -->
+            <video class="hover-video" width="360" height="215" muted loop>
+                <source src="media/tinyvid.mp4" type="video/mp4">
+            </video>
+            <video class="hover-video" width="360" height="215" muted loop>
+                <source src="media/tinyvid.mp4" type="video/mp4">
+            </video>
+            <!-- click on play video -->
+            <video class="click-video" width="360" height="215" muted loop>
+                <source src="media/tinyvid.mp4" type="video/mp4">
+            </video>
+        <!-- </div> -->
+
+        <video id="webcam" autoplay playsinline> </video>
+
     </main>
 
+    <script src="js/video.js"></script>
+    <script src="js/webcam.js"></script>
 </body>
 
 </html>
