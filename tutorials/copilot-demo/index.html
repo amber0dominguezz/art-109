@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#101311">
+  <meta name="theme-color" content="#110f16">
   <meta name="description" content="A little corner of the internet for things worth sharing.">
   <title>mingle — your daily scroll</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,17 +46,44 @@
         <a class="brand mobile-brand" href="#" aria-label="mingle home">
           <span class="brand-mark" aria-hidden="true">m<span>.</span></span>
         </a>
-        <div class="topbar-title"><span class="eyebrow">YOUR LITTLE CORNER</span><strong>Home</strong></div>
+        <div class="topbar-title"><span class="eyebrow">YOUR LITTLE CORNER OF THE INTERNET</span><strong>Home <span class="topbar-blink">✦</span></strong></div>
         <button class="icon-button mobile-search" type="button" aria-label="Search">⌕</button>
         <button class="icon-button topbar-notifications" type="button" aria-label="Notifications">♧<span class="notification-dot"></span></button>
       </header>
 
       <div class="feed-layout">
         <section class="feed-column" aria-label="Your social feed">
+          <section class="profile-card" id="profile" aria-label="Alex Morgan's profile">
+            <div class="profile-cover">
+              <span class="cover-sticker sticker-left" aria-hidden="true">✦</span>
+              <span class="cover-title">welcome to my space!</span>
+              <span class="cover-sticker sticker-right" aria-hidden="true">♡</span>
+            </div>
+            <div class="profile-main">
+              <div class="profile-identity">
+                <span class="profile-avatar avatar avatar-user" aria-hidden="true">A</span>
+                <div class="profile-name">
+                  <h1>Alex Morgan <span class="online-badge"><i></i> online now</span></h1>
+                  <p>@alexmorgan <span>✦</span> Brooklyn, NY</p>
+                </div>
+                <div class="profile-actions">
+                  <button class="button button-primary profile-action" type="button" data-focus-composer>＋ Add a thought</button>
+                  <button class="profile-message" type="button" aria-label="Send Alex a message">✉</button>
+                </div>
+              </div>
+              <p class="profile-mood"><span>MOOD:</span> daydreaming with my headphones on <span class="mood-emoji">☁</span></p>
+              <div class="profile-details">
+                <div class="profile-song"><span class="song-disc" aria-hidden="true">♫</span><span><small>NOW PLAYING</small><strong>Such Great Heights <em>— The Postal Service</em></strong></span><span class="equalizer" aria-hidden="true"><i></i><i></i><i></i><i></i></span></div>
+                <div class="profile-stats"><span><strong>248</strong> friends</span><span><strong>36</strong> photos</span><span><strong>12</strong> blogs</span></div>
+              </div>
+              <nav class="profile-tabs" aria-label="Profile sections"><a class="selected" href="#feed">My feed</a><a href="#friends">Friends</a><a href="#photos">Photos</a><a href="#interests">Interests</a></nav>
+            </div>
+          </section>
+
           <div class="welcome-row">
             <div>
-              <p class="eyebrow">SUNDAY, NOVEMBER 8</p>
-              <h1>A good day to <span>be here.</span></h1>
+              <p class="eyebrow">SUNDAY, NOVEMBER 8 <span class="welcome-star">✦</span></p>
+              <h2 class="welcome-title">The latest from your friends</h2>
               <p class="welcome-subtitle">A little inspiration from your people.</p>
             </div>
             <div class="weather-pill"><span aria-hidden="true">☀</span> 68° <span class="weather-city">Brooklyn</span></div>
