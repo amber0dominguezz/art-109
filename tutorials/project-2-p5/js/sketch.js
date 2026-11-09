@@ -1,7 +1,8 @@
 
 function setup() {
     const canvas = createCanvas(windowWidth, windowHeight, WEBGL);
-    canvas.addClass('site-background-canvas');
+    canvas.position(0,0);
+    canvas.style("z-index", -2);
     angleMode(DEGREES);
 }
 
@@ -24,7 +25,7 @@ function draw() {
         var g = map(i, 0, 20, 100, 200)
         var b = map(cos(frameCount), -1, 1, 200, 100)
 
-        stroke(r, g, b)
+        stroke(173, 84, 173)
 
         rotate(5)
 

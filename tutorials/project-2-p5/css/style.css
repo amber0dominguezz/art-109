@@ -7,7 +7,7 @@
     --font: 'Times New Roman', Times, serif;
     --font-color: rgb(50, 6, 54);
     --font-color-accent: rgb(169, 34, 186);
-    --accent-1: #ad54ad;
+    --accent-1: rgb(173, 84, 173);
     --photo-background-color: #16021f;
 }
 
@@ -52,27 +52,12 @@ html {
 }
 
 body {
-    background-color: transparent;
+    background-color: var(--bg-color-body);
     color: var(--font-color);
     font-size: 1.5rem;
     font-family: var(--font);
     line-height: 1.5;
-    isolation: isolate;
     /* text-align: justify; */
-}
-
-canvas.site-background-canvas {
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-    pointer-events: none;
-}
-
-header,
-main,
-footer {
-    position: relative;
-    z-index: 1;
 }
 
 header {
@@ -81,19 +66,19 @@ header {
 }
 
 header h1 {
-    color: #f8e9ff;
-    text-shadow: 0 0 8px #88628f, 0 0 18px #402a44;
+    text-shadow: #88628f 0px 0px 5px, #88628f 0px 0px 10px, #88628f 0px 0px 15px,
+     #402a44 0px 0px 20px, #402a44 0px 0px 30px, #402a44 0px 0px 40px, #402a44 0px 0px 50px, #402a44 0px 0px 75px;
 }
 
 nav a {
     text-decoration: none;
-    color: #f8e9ff;
+    color: var(--font-color);
     /* margin: 0 .5rem; */
     transition: all 0.5s ease;
 }
 
 nav a:hover {
-    color: #e4a6f1;
+    color: var(--accent-1);
 }
 
 .navbar {
