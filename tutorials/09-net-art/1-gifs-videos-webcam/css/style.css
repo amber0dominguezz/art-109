@@ -1,0 +1,18 @@
+
+.dancing-cat {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.kitty-shit {
+    position: relative;
+    margin: 50px auto;
+    max-width: 400px;
+}
+
+.other-dancing-cat {
+    position: absolute;
+    top: 40px;
+    left: 70px;
+}
